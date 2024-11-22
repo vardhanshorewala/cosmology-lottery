@@ -21,10 +21,12 @@ export class Contract {
   constructor(state: State, {msg, address}: {msg: Msg, address: string}) {
     this.msg = msg;
     this.address = address;
+    
 
     [this.totalSupply, this.setTotalSupply] = totalSupply(state);
     [this.balance, this.setBalance] = balance(state);
     [this.reserves, this.setReserves] = reserves(state);
+
   }
 
   token0: string = "uusdc"; // ibc denom for usdc

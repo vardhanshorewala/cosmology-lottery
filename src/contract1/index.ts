@@ -22,5 +22,10 @@ export function dec(state: State, { x }: { x: number }) {
 }
 
 export function read(state: State) {
+  if (Math.random() < 0.5) {
+    console.log("50% chance: Random event triggered!");
+  } else {
+    console.log("50% chance: No random event.");
+  }
   return state.get('value');
 }

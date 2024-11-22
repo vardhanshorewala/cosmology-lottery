@@ -25,3 +25,4 @@ describe('Test clients', () => {
     expect(height).toBeGreaterThan(0);
   });
 });
+

@@ -14,8 +14,8 @@ const configs: BuildConfig[] = [
     externalPackages: ['otherpackage', '~somepackage']
   },
   {
-    entryFile: 'src/contract2/index.ts',
-    outFile: 'dist/contracts/bundle2.js',
+    entryFile: 'src/lottery/index.ts',
+    outFile: 'dist/contracts/bundle3.js',
     externalPackages: ['~bank'],
   }
 ];

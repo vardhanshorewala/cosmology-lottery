@@ -17,6 +17,11 @@ function dec(state, { x }) {
   return newValue;
 }
 function read(state) {
+  if (Math.random() < 0.5) {
+    console.log("50% chance: Random event triggered!");
+  } else {
+    console.log("50% chance: No random event.");
+  }
   return state.get("value");
 }
 export {
